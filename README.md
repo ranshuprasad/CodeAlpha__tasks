@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  Internship Task Submissions — Task 1 & Task 3
+  CodeAlpha Internship Task Submissions
 </p>
 
 ---
@@ -35,36 +35,32 @@ The projects demonstrate:
 
 **Service Robots: Transforming Domestic, Agricultural, and Military Operations**
 
-This research report explores three major areas of service robotics:
+This research report examines service robotics across three major application areas:
 
 - 🏠 Domestic service robots
 - 🌾 Agricultural service robots
 - 🛡️ Military and defence service robots
-- ⚙️ Enabling technologies
-- ✅ Benefits and challenges
-- 💰 Economic and market impact
-- 🔮 Future outlook
+
+The report also discusses enabling technologies, benefits, challenges, economic impact, and future developments. The report covers technologies such as LiDAR/SLAM, computer vision, connectivity, RTK-GPS, multispectral imaging, machine learning, autonomous navigation, and ruggedised military systems. :contentReference[oaicite:2]{index=2} :contentReference[oaicite:3]{index=3}
 
 ### Report Contents
 
-The report includes:
-
+- Executive Summary
 - Introduction
-- Domestic service robotics
-- Agricultural robotics
-- Military and defence robotics
-- Robotics technologies
-- Benefits and challenges
-- Comparative analysis
-- Economic impact
-- Future outlook
+- Domestic Service Robots
+- Agricultural Service Robots
+- Military Service Robots
+- Enabling Technologies
+- Comparative Analysis
+- Economic and Market Impact
+- Robotics-as-a-Service (RaaS)
+- Future Outlook
 - Conclusion
 - References
-- Figures and comparison tables
 
 ### 📄 Report
 
-[**View Task 1 — Service Robots Research Report**](./Task-1-Service-Robots-Research-Report.pdf)
+[**View / Download Task 1 — Service Robots Research Report**](./Task-1-Service-Robots-Research-Report.pdf)
 
 ---
 
@@ -74,11 +70,7 @@ The report includes:
 
 **Sensor-Based Automatic Lighting with Manual Override**
 
-The project presents an automated smart-home lighting system that uses sensors and a microcontroller to control lighting based on:
-
-- Ambient light
-- Human presence
-- Manual user control
+The project presents an automated smart-home lighting system designed to switch lights according to **ambient light and human presence**, while retaining manual control. :contentReference[oaicite:4]{index=4}
 
 ---
 
@@ -88,11 +80,13 @@ The project presents an automated smart-home lighting system that uses sensors a
 |---|---|
 | **Arduino UNO** | Central controller |
 | **PIR Sensor** | Detects human motion |
-| **LDR Sensor** | Measures ambient light |
-| **Relay Module** | Controls the lighting load |
-| **LED Lamp** | Controlled lighting output |
-| **5V Power Supply** | Powers the low-voltage electronics |
-| **Manual Switch / Mobile Control** | Manual override |
+| **LDR + Resistor** | Measures ambient light |
+| **1-Channel Relay Module** | Switches the lighting load |
+| **LED Lamp** | Lighting output |
+| **AC–DC 5 V Supply** | Powers low-voltage electronics |
+| **Wall Switch / Mobile Control** | Manual override |
+
+These components and their roles are documented in the Task 3 report. :contentReference[oaicite:5]{index=5}
 
 ---
 
@@ -100,19 +94,17 @@ The project presents an automated smart-home lighting system that uses sensors a
 
 The system combines **ambient light detection** and **human presence detection**.
 
-### Step 1 — Detect Light Level
+### 1. Detect Ambient Light
 
-The **LDR sensor** measures the surrounding light level.
+The **LDR sensor** continuously measures the surrounding brightness.
 
-If the environment is sufficiently bright, the lighting remains OFF.
+If the environment is sufficiently bright, the light remains OFF unless manual override is used.
 
-### Step 2 — Detect Human Motion
+### 2. Detect Human Motion
 
-If the environment is dark, the Arduino checks the **PIR sensor**.
+If the environment is dark, the Arduino checks the **PIR sensor** for motion.
 
-The PIR sensor detects whether a person is present.
-
-### Step 3 — Automatic Lighting
+### 3. Turn the Light ON
 
 When:
 
