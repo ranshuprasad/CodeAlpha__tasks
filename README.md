@@ -58,9 +58,6 @@ The report also discusses enabling technologies, benefits, challenges, economic 
 - Conclusion
 - References
 
-### 📄 Report
-
-[**View / Download Task 1 — Service Robots Research Report**](./Task-1-Service-Robots-Research-Report.pdf)
 
 ---
 
